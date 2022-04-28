@@ -6,7 +6,7 @@ const express = require('express'),
     axios = require('axios'),
     crypto = require('crypto'),
     db = require('./db-config.js'),
-    port = 3000;
+    port = process.env.PORT || 3000;
 
 
 const app = express();
